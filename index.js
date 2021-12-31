@@ -18,7 +18,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         await client.connect();
-        console.log('database is Connected !');
+        console.log('database is Connected Now !');
         const database = client.db("holidify");
         const touristPlaces = database.collection("tourist-places");
         const hotelsCollection = database.collection("hotels");
